@@ -2,16 +2,16 @@
     padding-top: 35px;
     background: var(--background-color);
     background-size: cover;
-    
+    border-top: solid  2px;
+    border-image: linear-gradient(90deg, #355c7d 0%, #6c5b7b 50%, #c06c84 100%);
+    border-image-slice: 1;
 }
 
 .footer-body {
     display: grid;
     grid-template-columns: 250px 220px 410px 550px;
     color: var(--color-light);
-    border-top: solid  2px;
-    border-image: linear-gradient(90deg, #355c7d 0%, #6c5b7b 50%, #c06c84 100%);
-    border-image-slice: 1;
+   
     
 
     .footer-title {
