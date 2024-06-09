@@ -232,8 +232,11 @@ function glav() {
                 </div>
             </div>
         </div>
+        <br />
+        <br />
     </section>
   </main>
+
   )
 }
 

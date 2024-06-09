@@ -1,6 +1,6 @@
 .glav-section {
     padding-top: 50px;
-    background: black;
+    background: var(--background-color);
 }
 
 .glav {
@@ -207,7 +207,7 @@ color: #000;
 .janrmus-catal {
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     .janrmus-cards-item {
         display: flex;
@@ -266,7 +266,7 @@ color: #000;
             .janrmus-cards-item__title::before {
                 position: absolute;
                 content: url(./img/down.png);
-                left: 180px;
+                left: 160px;
                 top: -4px;
             }
     }
@@ -294,6 +294,28 @@ color: #000;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
-    color: #fff;
+    color: var(--color-light);
 }
 
+.popular-creator {
+    display: flex;
+    justify-content: space-around;
+
+    .popular-creator-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--color-light);
+
+        .popular-creator-info__janr {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 15px;
+            color: var(--color-semilight); 
+        }
+    }
+}
