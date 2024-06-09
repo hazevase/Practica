@@ -1,0 +1,199 @@
+.glav-section {
+    padding-top: 50px;
+    background: black;
+}
+
+.glav {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.glav-title {
+    color: var(--color-light);
+    font-family: 'inter';
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.glav-subtitle {
+    
+    color: var(--color-light);
+    font-family: 'inter';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.news{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 80px;
+    row-gap: 15px;
+    border-radius: 20px;
+}
+
+.rec-music {
+    display: flex;
+    flex-direction: column;
+    width: 272px;
+    height: 240px;
+    background: linear-gradient(90deg, #4776e6 0%, #8e54e9 100%);
+}
+
+.new-music {
+    display: flex;
+    flex-direction: column;
+    width: 272px;
+    height: 240px;
+    background: linear-gradient(90deg, #3ca55c 0%, #b5ac49 100%);
+}
+
+.top-music {
+    display: flex;
+    flex-direction: column;
+    width: 272px;
+    height: 240px;
+    background: linear-gradient(90deg, #1a2980 0%, #26d0ce 100%);
+}
+
+.day-music {
+    display: flex;
+    flex-direction: column;
+    width: 272px;
+    height: 240px;
+    background: linear-gradient(90deg, #ff512f 0%, #f09819 100%);
+}
+
+.news-title {
+font-family: var(--font-family);
+font-weight: bold;
+font-size: 20px;
+color: #fff;
+}
+
+.news-subtitle {
+    position: relative;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 15px;
+color: #000;
+}
+
+.news-subtitle::before {
+    content: url(./Vector.png);
+    position: absolute;
+    right: 80px;
+    top: 2px;
+}
+
+.glav-moon {
+    margin-top: 50px;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+}
+
+.glav-moon-card {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    column-gap: 20px;
+    border-radius: 20px;
+
+    .glav-moon-card__title {
+        position: relative;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 16px;
+        color: #000;
+    }
+
+    .glav-moon-card__title::before {
+        content: url(./Vector.png);
+        position: absolute;
+        /* right: 80px;
+        top: 2px; */
+       left: 180px;
+       top: 2px;
+    }
+    
+    .good { 
+        padding-left: 15px;
+        width: 223px;
+        height: 53px;
+        background: linear-gradient(90deg, #feac5e 0%, #c779d0 50%, #4bc0c8 100%);
+    }
+
+    .sad {
+        padding-left: 15px;
+        width: 223px;
+        height: 53px;
+        background: linear-gradient(90deg, #2bc0e4 0%, #eaecc6 100%);
+    }
+
+    .norm {
+        padding-left: 15px;
+        width: 223px;
+        height: 53px;
+        background: linear-gradient(90deg, #757f9a 0%, #d7dde8 100%);
+    }
+
+    .rom {
+        padding-left: 15px;
+        width: 223px;
+        height: 53px;
+        background: linear-gradient(90deg, #dd5e89 0%, #f7bb97 100%);
+    }
+
+    .lifegood {
+        padding-left: 15px;
+        width: 223px;
+        height: 53px;
+        background: linear-gradient(90deg, #d1913c 0%, #ffd194 100%);
+    }
+}
+
+.playlists {
+    margin-top: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color-light);
+}
+
+.playlists-card {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .playlists-card-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        width: 222px;
+        height: 280px;
+        background: linear-gradient(90deg, #4776e6 0%, #8e54e9 100%);
+
+        .playlists-card-item__title {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--color-light);
+        }
+
+        .playlist-card-item__link {
+            font-family: var(--font-family);
+            font-weight: 300;
+            font-size: 16px;
+            text-align: center;
+            color: var(--color-light);
+        }
+    }
+}
+
