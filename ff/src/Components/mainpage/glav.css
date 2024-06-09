@@ -265,7 +265,7 @@ color: #000;
 
             .janrmus-cards-item__title::before {
                 position: absolute;
-                content: url(./down.png);
+                content: url(./img/down.png);
                 left: 180px;
                 top: -4px;
             }
@@ -288,5 +288,12 @@ color: #000;
         font-size: 14px;
         color: #797878;
     }
+}
+
+.popular-creator__title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
 }
 

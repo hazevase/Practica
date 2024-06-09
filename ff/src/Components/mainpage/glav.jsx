@@ -1,4 +1,9 @@
 import './glav.css'
+import Metan from './img/Metan.png'
+import YHHB from './img/YHHB.png'
+import Vspak from './img/Vspak.png'
+import MrKitty from './img/MrKitty.png'
+import Coi from './img/Coi.png'
 
 
 function glav() {
@@ -189,6 +194,42 @@ function glav() {
             <br />
             <div className="other">
                 <button className="other-btn">Показать еще</button>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div className="popular-creator__title">
+                <span>
+                    Популярные исполнители
+                </span>
+            </div>
+            <br />
+            <div className="popular-creator">
+                <div className="popular-creator-info">
+                    <img className='popular-creator-info__photo' src={Metan} alt="" />
+                    <span className="popular-creator-info__name">Metan</span>
+                    <span className="popular-creator-info__janr">Рэп</span>
+                </div>
+                <div className="popular-creator-info">
+                    <img className='popular-creator-info__photo' src={YHHB} alt="" />
+                    <span className="popular-creator-info__name">УННВ</span>
+                    <span className="popular-creator-info__janr">Рэп</span>
+                </div>
+                <div className="popular-creator-info">
+                    <img className='popular-creator-info__photo' src={Vspak} alt="" />
+                    <span className="popular-creator-info__name">Vspak</span>
+                    <span className="popular-creator-info__janr">Лирика</span>
+                </div>
+                <div className="popular-creator-info">
+                    <img className='popular-creator-info__photo' src={MrKitty} alt="" />
+                    <span className="popular-creator-info__name">Mr.Kitty</span>
+                    <span className="popular-creator-info__janr">Электро</span>
+                </div>
+                <div className="popular-creator-info">
+                    <img className='popular-creator-info__photo' src={Coi} alt="" />
+                    <span className="popular-creator-info__name">Цой</span>
+                    <span className="popular-creator-info__janr">Рок</span>
+                </div>
             </div>
         </div>
     </section>
