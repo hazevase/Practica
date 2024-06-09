@@ -19,13 +19,17 @@
 .account-main {
     display: grid; 
     grid-template-columns: 400px 500px;
-
+    
 }
 
 .account-info-main__layout {
     display: grid;
     grid-template-columns: 300px 300px;
-    
+    padding: 10px 10px;
+}
+
+.account-info-main__item {
+    padding: 10px;
 }
 
 
@@ -62,3 +66,32 @@
     font-size: 20px;
     color: var(--color-light);
 }
+
+
+.account-info-other__title span {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #c06c84;
+}
+
+.account-public__title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color-light);
+}
+
+.account-music__title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+
+.account-public {
+    display: flex;
+    justify-content: space-between;
+}
+
+.account-music__title

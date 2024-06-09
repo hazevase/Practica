@@ -9,6 +9,8 @@ function ACC() {
             <div className="account-content">
                 <h1 className="account-title">Профиль</h1>
             </div>
+            <br />
+            <br />
             <div className="account-main">
             <div className="account-avatar">
                 <img width={325} height={325} className='avatar' src={Ava} alt="" />
