@@ -66,7 +66,7 @@ function ACC() {
                 <span className="account-public__title">
                     Публичный доступ к фонотеке
                 </span>
-                <input type='radio' />
+                <input type='checkbox' />
                 </div>
                 <div className="account-music">
                     <span className="account-music__title">
@@ -80,6 +80,14 @@ function ACC() {
             </div>
             </div>
             </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
     </section>
   </main>

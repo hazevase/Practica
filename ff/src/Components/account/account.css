@@ -18,7 +18,7 @@
 
 .account-main {
     display: grid; 
-    grid-template-columns: 400px 500px;
+    grid-template-columns: 400px 650px;
     
 }
 
@@ -92,6 +92,48 @@
 .account-public {
     display: flex;
     justify-content: space-between;
+    padding-left: 10px;
 }
 
-.account-music__title
+.account-public input {
+    width: 50px;
+    /* height: 20px; */
+}
+
+.account-music {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-top: 27px;
+    .account-music__btn {
+        margin-top: 4px;
+        width: 71px;
+        height: 24px;
+        border: 0.60px solid #797878;
+        border-radius: 5px;
+        background: #797878;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        color: #000;
+    }
+}
+
+.account-music input {
+    margin-top: 4px;
+    width: 318px;
+    height: 24px;
+    border: 0.60px solid #797878;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+} 
+
+.account-music input::placeholder {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: #797878;
+}
+
+
