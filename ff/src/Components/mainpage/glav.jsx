@@ -1,7 +1,7 @@
 import './glav.css'
 
 
-function Reg() {
+function glav() {
   return (
   <main className='content'>
     <section className='glav-section'>
@@ -111,43 +111,84 @@ function Reg() {
                     <a className='playlist-card-item__link' href="">ROMANTICA, Lestmor, DVRST</a>
                 </div>
             </div>
-
+            <br />
+            <br />
             <div className="janrmus">
                 <span className='janrmus-title'>
                     Жанры музыки
                 </span>
+                <br />
+                <br />
                 <div className="janrmus-catal">
                     <div className="janrmus-cards">
                         <div className="janrmus-cards-item">
                             <div className="janrmus-cards-item__icon"></div>
+                            <a className='janrmus-cards-item__title' href="">Электроника</a>
                         </div>
                     </div>
                     <div className="janrmus-cards">
                         <div className="janrmus-cards-item">
-                            <div className="janrmus-cards-item__icon"></div>
-                            <a className='janrmus-cards-item__title' href=""></a>
+                            <div className="janrmus-cards-item__icon dark"></div>
+                            <a className='janrmus-cards-item__title' href="">Рок</a>
                         </div>
                     </div>
                     <div className="janrmus-cards">
                         <div className="janrmus-cards-item">
-                            <div className="janrmus-cards-item__icon"></div>
-                            <a className='janrmus-cards-item__title' href=""></a>
+                            <div className="janrmus-cards-item__icon pink"></div>
+                            <a className='janrmus-cards-item__title' href="">Поп</a>
                         </div>
                     </div>
                     <div className="janrmus-cards">
                         <div className="janrmus-cards-item">
-                            <div className="janrmus-cards-item__icon"></div>
-                            <a className='janrmus-cards-item__title' href=""></a>
+                            <div className="janrmus-cards-item__icon grey"></div>
+                            <a className='janrmus-cards-item__title' href="">Рэп</a>
                         </div>
                     </div>
                     <div className="janrmus-cards">
                         <div className="janrmus-cards-item">
-                            <div className="janrmus-cards-item__icon"></div>
-                            <a className='janrmus-cards-item__title' href=""></a>
+                            <div className="janrmus-cards-item__icon yel"></div>
+                            <a className='janrmus-cards-item__title' href="">Шансон</a>
                         </div>
                     </div>
+                    
                 </div>
-                
+                <div className="janrmus-catal">
+                    <div className="janrmus-cards">
+                        <div className="janrmus-cards-item">
+                            <div className="janrmus-cards-item__icon whi"></div>
+                            <a className='janrmus-cards-item__title' href="">Электроника</a>
+                        </div>
+                    </div>
+                    <div className="janrmus-cards">
+                        <div className="janrmus-cards-item">
+                            <div className="janrmus-cards-item__icon blue"></div>
+                            <a className='janrmus-cards-item__title' href="">Рок</a>
+                        </div>
+                    </div>
+                    <div className="janrmus-cards">
+                        <div className="janrmus-cards-item">
+                            <div className="janrmus-cards-item__icon lig"></div>
+                            <a className='janrmus-cards-item__title' href="">Поп</a>
+                        </div>
+                    </div>
+                    <div className="janrmus-cards">
+                        <div className="janrmus-cards-item">
+                            <div className="janrmus-cards-item__icon green"></div>
+                            <a className='janrmus-cards-item__title' href="">Рэп</a>
+                        </div>
+                    </div>
+                    <div className="janrmus-cards">
+                        <div className="janrmus-cards-item">
+                            <div className="janrmus-cards-item__icon yeli"></div>
+                            <a className='janrmus-cards-item__title' href="">Шансон</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <br />
+            <br />
+            <div className="other">
+                <button className="other-btn">Показать еще</button>
             </div>
         </div>
     </section>
@@ -155,4 +196,4 @@ function Reg() {
   )
 }
 
-export default Reg
+export default glav

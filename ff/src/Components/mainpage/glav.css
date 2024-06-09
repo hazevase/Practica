@@ -197,3 +197,96 @@ color: #000;
     }
 }
 
+.janrmus-title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color-light);
+}
+
+.janrmus-catal {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .janrmus-cards-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+            .janrmus-cards-item__icon {
+                border-radius: 9px;
+                width: 45px;
+                height: 45px;
+                background: linear-gradient(90deg, #091e3a 0%, #2f80ed 50%, #2d9ee0 100%);
+            }
+
+            .dark {
+                background: linear-gradient(90deg, #870000 0%, #190a05 100%);
+            }
+
+            .pink{
+                background: linear-gradient(90deg, #f2709c 0%, #ff9472 100%);
+            }
+
+            .grey {
+                background: linear-gradient(90deg, #485563 0%, #29323c 100%);
+            }
+
+            .yel {
+                background: linear-gradient(90deg, #ff8008 0%, #ffc837 100%);
+            }
+
+            .whi {
+                background: linear-gradient(90deg, #1d2b64 0%, #f8cdda 100%);
+            }
+
+            .blue {
+                background: linear-gradient(90deg, #24c6dc 0%, #514a9d 100%);
+            }
+
+            .lig {
+                background: linear-gradient(90deg, #b993d6 0%, #8ca6db 100%);
+            }
+
+            .green {
+                background: linear-gradient(90deg, #52c234 0%, #061700 100%);
+            }
+
+            .yeli {
+                background: linear-gradient(90deg, #c02425 0%, #f0cb35 100%);
+            }
+            .janrmus-cards-item__title {
+                position: relative;
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 16px;
+                color: var(--color-light);
+            }
+
+            .janrmus-cards-item__title::before {
+                position: absolute;
+                content: url(./down.png);
+                left: 180px;
+                top: -4px;
+            }
+    }
+   
+}
+
+.other {
+    display: flex;
+    justify-content: center;
+
+    .other-btn {
+        border: 1px solid #797878;
+        border-radius: 5px;
+        width: 184px;
+        height: 28px;
+        background: transparent;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        color: #797878;
+    }
+}
+
