@@ -21,7 +21,7 @@
     border-radius: 50px;
     box-sizing: border-box;
     font-family: 'inter';
-    font-size: 26px;
+    font-size: 15px;
     color: var(--color-light);
     outline: none;
     transition: .5s;
@@ -29,11 +29,11 @@
 
 .input::placeholder{
     color: var(--color-light);
-    font-size: 20px;
+    font-size: 15px;
 }
 .box:hover input{
     width: 350px;
-    background: linear-gradient(90deg, #355c7d 0%, #6c5b7b 50%, #c06c84 100%);;
+    background: linear-gradient(90deg, #355c7d 0%, #6c5b7b 50%, #c06c84 100%);
     border-radius: 10px;
 }
 .box i{
@@ -67,8 +67,14 @@
         font-family: 'inter';
         font-size: 16px;
         font-weight: 400;
+    }
 
-       
+    .nav-menu-item__link:hover {
+        background-image: linear-gradient(90deg, #355c7d 0%, #6c5b7b 50%, #c06c84 100%);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-size:100% 15%;
+        width:fit-content;
     }
 }
 
