@@ -1,6 +1,7 @@
 import './reg.css'
 import Google from './img/icons/google-icon.svg'
 import VK from './img/icons/VK-icon.svg'
+import { Link } from 'react-router-dom';
 
 function Reg() {
   return (
@@ -21,7 +22,7 @@ function Reg() {
                     <input className='reg-input' placeholder='Логин' size={50} type="email" />
                     <input className='reg-input ' placeholder='Пароль' size={50} type="password" />
                     <a className='reg-wrongpass' href="">Забыли пароль?</a>
-                    <button className='reg-btn'>ВОЙТИ</button>
+                    <Link to="/Main" className='reg-btn'>ВОЙТИ</Link>
                     <p className='reg-alternative'>или</p>
                     <div className="reg-links">
                     <a href="" className="reg-links__icon google"> <img src={Google} alt="" /></a>
@@ -39,4 +40,4 @@ function Reg() {
   )
 }
 
-export default Reg
+export default Reg;

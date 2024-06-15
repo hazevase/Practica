@@ -6,7 +6,7 @@ import MrKitty from './img/MrKitty.png'
 import Coi from './img/Coi.png'
 
 
-function glav() {
+function Glav() {
   return (
   <main className='content'>
     <section className='glav-section'>
@@ -240,4 +240,4 @@ function glav() {
   )
 }
 
-export default glav
+export default Glav
