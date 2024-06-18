@@ -3,6 +3,7 @@ import Google from './img/icons/google-icon.svg'
 import VK from './img/icons/VK-icon.svg'
 import { Link } from 'react-router-dom';
 
+
 function Reg() {
   return (
   <main className='content'>
@@ -19,10 +20,10 @@ function Reg() {
             <form className='form-reg'>
                     <div className="form-reg__body">
                     <span className="form-reg__title">ВХОД</span>
-                    <input className='reg-input' placeholder='Логин' size={50} type="email" />
-                    <input className='reg-input ' placeholder='Пароль' size={50} type="password" />
-                    <a className='reg-wrongpass' href="">Забыли пароль?</a>
-                    <Link to="/Main" className='reg-btn'>ВОЙТИ</Link>
+                    <input  className='reg-input' placeholder='Почта' size={50} type="email" />
+                    <input  className='reg-input ' placeholder='Пароль' size={50} type="password" />
+                    <Link to="/login" className='reg-wrongpass' href="">Регестрация</Link>
+                    <Link type="submit" to="/Main" className='reg-btn'>ВОЙТИ</Link>
                     <p className='reg-alternative'>или</p>
                     <div className="reg-links">
                     <a href="" className="reg-links__icon google"> <img src={Google} alt="" /></a>
