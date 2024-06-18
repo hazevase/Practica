@@ -1,11 +1,25 @@
 import './log.css'
 import Google from './img/icons/google-icon.svg'
 import VK from './img/icons/VK-icon.svg'
-import { Link} from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
+import { useState } from 'react';
+import axios from 'axios'
 
 
 function Reg() {
  
+const [email, setEmail] = useState()
+const [password, setPassword] = useState()
+const navigate =  useNavigate()
+
+const handleSubmit = (e) => {
+    e.preventDefault()
+    axios.post('http://127.0.0.1:3001/register', {email, password})
+    .then(result => {console.log(result)
+    navigate('/')
+    })
+    .catch(err=> console.log(err))
+}
 
   return (
   <main className='content'>
@@ -27,18 +41,22 @@ function Reg() {
                     className='reg-input' 
                     placeholder='Email' 
                     size={50} 
-                    type="text"
-                    name="email"/>
+                    type="email"
+                    name="email"
+                    onChange={(e) => setEmail(e.target.value)}
+                    />
 
                     <input 
                     className='reg-input' 
                     placeholder='Password' 
                     size={50} 
                     name="password"
-                    type="text" />
+                    type="password" 
+                    onChange={(e) => setPassword(e.target.value)}
+                    />
 
                     <Link to="/" className='reg-wrongpass' href="">Вход</Link>
-                    <Link type='submit' className='reg-btn'>ВОЙТИ</Link>
+                    <button type='submit' className='reg-btn'>ВОЙТИ</button>
                     <p className='reg-alternative'>или</p>
                     <div className="reg-links">
                     <a href="" className="reg-links__icon google"> <img src={Google} alt="" /></a>
