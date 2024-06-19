@@ -21,16 +21,6 @@ function ACC() {
                 <span className="account-info__title">Основное</span>
                 <div className="account-info-main__layout">
                 <div className="account-info-main__left">
-            <div className="account-info-main__item">
-                    <span>
-                    Никнейм
-                    </span>
-                </div>
-                <div className="account-info-main__item">
-                    <span>
-                    Уникальный индекс
-                    </span>
-                </div> 
                 <div className="account-info-main__item">
                     <span>
                     Почта
@@ -40,17 +30,7 @@ function ACC() {
                 <div className="account-info-main__right">
                 <div className="account-info-main__item">
                     <span>
-                    ФИО
-                    </span>
-                </div>
-                <div className="account-info-main__item">
-                    <span>
-                    Пол
-                    </span>
-                </div>
-                <div className="account-info-main__item">
-                    <span>
-                    Дата рождения
+                    Пароль
                     </span>
                 </div>
                 </div>

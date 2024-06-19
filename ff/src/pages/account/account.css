@@ -22,6 +22,11 @@
     
 }
 
+.account-info {
+    padding-top: 50px;
+    
+}
+
 .account-info-main__layout {
     display: grid;
     grid-template-columns: 300px 300px;
