@@ -1,0 +1,59 @@
+.track-img {
+    width: 350px;
+}
+
+.track-info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 450px;
+    font-family: var(--font-family);
+    color: var(--color-light);
+}
+
+.track-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.track-content {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.track-collection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 10px;
+}
+
+.track-form {
+    display: flex;
+    justify-content: flex-end;
+
+    .track-form__btn {
+        background: black;
+        border-radius: 20px;
+        border: 1px solid white;
+        padding: 10px 15px;
+        color: var(--color-light);
+        font-family: var(--font-family);
+        font-size: 20px;
+    }
+
+    .track-form__btn:hover {
+        border-radius: 10px;
+        border: 1px solid white;
+        color: black;
+        background: var(--color-light);
+        transition: 1s linear;
+    }
+}
+
+
+
+

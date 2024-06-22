@@ -4,6 +4,7 @@ import YHHB from './img/YHHB.png'
 import Vspak from './img/Vspak.png'
 import MrKitty from './img/MrKitty.png'
 import Coi from './img/Coi.png'
+import { Link } from 'react-router-dom';
 
 
 function Glav() {
@@ -128,31 +129,31 @@ function Glav() {
                     <div className="janrmus-cards">
                         <div className="janrmus-cards-item">
                             <div className="janrmus-cards-item__icon"></div>
-                            <a className='janrmus-cards-item__title' href="">Электроника</a>
+                            <Link to="/Elec"><a className='janrmus-cards-item__title' href="">Электроника</a></Link>
                         </div>
                     </div>
                     <div className="janrmus-cards">
                         <div className="janrmus-cards-item">
                             <div className="janrmus-cards-item__icon dark"></div>
-                            <a className='janrmus-cards-item__title' href="">Рок</a>
+                            <Link to="/Rock"><a className='janrmus-cards-item__title' href="">Рок</a></Link>
                         </div>
                     </div>
                     <div className="janrmus-cards">
                         <div className="janrmus-cards-item">
                             <div className="janrmus-cards-item__icon pink"></div>
-                            <a className='janrmus-cards-item__title' href="">Поп</a>
+                            <Link to="/Pop"><a className='janrmus-cards-item__title' href="">Поп</a></Link>
                         </div>
                     </div>
                     <div className="janrmus-cards">
                         <div className="janrmus-cards-item">
                             <div className="janrmus-cards-item__icon grey"></div>
-                            <a className='janrmus-cards-item__title' href="">Рэп</a>
+                            <Link to="/Rap"><a className='janrmus-cards-item__title' href="">хардстайл</a></Link>
                         </div>
                     </div>
                     <div className="janrmus-cards">
                         <div className="janrmus-cards-item">
                             <div className="janrmus-cards-item__icon yel"></div>
-                            <a className='janrmus-cards-item__title' href="">Шансон</a>
+                            <Link to="/Shan"><a className='janrmus-cards-item__title' href="">Шансон</a></Link>
                         </div>
                     </div>
                     
@@ -179,7 +180,7 @@ function Glav() {
                     <div className="janrmus-cards">
                         <div className="janrmus-cards-item">
                             <div className="janrmus-cards-item__icon green"></div>
-                            <a className='janrmus-cards-item__title' href="">Рэп</a>
+                            <a className='janrmus-cards-item__title' href="">хардстайл</a>
                         </div>
                     </div>
                     <div className="janrmus-cards">

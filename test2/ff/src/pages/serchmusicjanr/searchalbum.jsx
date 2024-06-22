@@ -2,6 +2,7 @@ import './searchalbum.css'
 import React, { useState } from 'react';
 import axios from 'axios';
 import getSpotifyToken from '../../utils/getSpotifyToken';
+import { Link } from 'react-router-dom';
 
 const AlbumList = () => {
     const [albums, setAlbums] = useState([]);
