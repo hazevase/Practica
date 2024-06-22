@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Caveat';
+  src: url('../fonts/Caveat-VariableFont_wght.ttf') format('ttf');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'intor';
+  src: url('../fonts/Inter-VariableFont_slnt,wght.ttf') format('ttf');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+span {
+  color: var(--color-light);
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  color: var(--color-light);
+}
+
+a{
+text-decoration: none;
+list-style: none;
+color: var(--color-light);
+}
+
+body {
+  margin: 0 auto;
+}
+
+:where(
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl
+):where([class]) {
+margin-block: 0;
+}
+
+:where(dd[class]) {
+margin-left: 0;
+}
+
+:where(ul[class]) {
+list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1.5;
+}
+
+:root {
+  --font-family: 'inter';
+  --container-width: 1300px;
+  --container-padding-x: 15px;
+  --background-color: #000000;
+  --color-light: #fff;
+  --color-semilight: #C0C0C0;
+  --color-semi-semilight: #D9D9D9;
+  --main-grad: linear-gradient(90deg, #355c7d 0%, #6c5b7b 50%, #c06c84 100%);
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}

@@ -1,0 +1,27 @@
+.mymusic-section {
+    background: var(--background-color);
+}
+
+.mymusic-title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--color-light);
+}
+
+.nedavno-title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color-light);
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1439px;
+    height: 170px;
+    background: linear-gradient(90deg, #355c7d 0%, #6c5b7b 50%, #c06c84 100%);
+    border-radius: 20px;
+}
