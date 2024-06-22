@@ -17,6 +17,7 @@ function Header() {
       <div className="nav-manu">
         <li className='nav-menu-item__link'><Link to="/Main" className='nav-menu-item__link' href="">Главная</Link></li>
         <li className='nav-menu-item__link'><Link to="/MyMusic" className='nav-menu-item__link' href="">Моя музыка</Link></li>
+        <li className='nav-menu-item__link'><Link to="/Album" className='nav-menu-item__link' href="">Альбомы</Link></li>
       </div>
       <div className="user-accout">
       <Link to="Account" className='user-accout__link' href=""><span class="material-symbols-outlined">account_circle</span></Link>

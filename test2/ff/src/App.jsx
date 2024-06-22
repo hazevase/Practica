@@ -6,6 +6,7 @@ import ACC from './pages/account/account.jsx'
 import Reg  from './pages/registration/reg.jsx'
 import Layout  from './Components/layout.jsx'
 import Login from "./pages/login/log.jsx";
+import AlbumList from './pages/serchmusicjanr/searchalbum.jsx';
 
 function App() {
   const user = localStorage.getItem("token");
@@ -17,6 +18,7 @@ function App() {
         {user && <Route path='/Main' exact element = {<Glav />}/>}
         {user &&<Route path='/MyMusic' element= {<MyM />}/>}
         {user &&<Route path='/Account' element = {<ACC />}/>}
+        <Route path='/Album' element = {<AlbumList />}/>
     </Route>
    </Routes>
   )
