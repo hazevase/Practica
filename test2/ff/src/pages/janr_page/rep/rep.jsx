@@ -22,7 +22,7 @@ const GenreTracks = () => {
                 },
                 params: {
                     seed_genres: genre,
-                    limit: 6 // Ограничение на количество возвращаемых треков
+                    limit: 9 // Ограничение на количество возвращаемых треков
                 }
             });
             setTracks(response.data.tracks);
@@ -50,7 +50,7 @@ const GenreTracks = () => {
                     <ul className='track-wrap'>
                         {tracks.map((track) => (
                             <li className='track-collection' key={track.id}>
-                                <img className='track-img' src={track.album.images[0]?.url} alt={track.name} />
+                                <img width="350" className='track-img' src={track.album.images[0]?.url} alt={track.name} />
                                 <p className='track-info'>{track.name} by {track.artists[0].name}</p>
                                 <audio className='track-player' controls>
                                     <source src={track.preview_url} type="audio/mpeg" />

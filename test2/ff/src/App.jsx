@@ -23,7 +23,7 @@ function App() {
         {user && <Route path='/Main' exact element = {<Glav />}/>}
         {user &&<Route path='/MyMusic' element= {<MyM />}/>}
         {user &&<Route path='/Account' element = {<ACC />}/>}
-        <Route path='/Album' element = {<AlbumList />}/>
+        {user && <Route path='/Album' element = {<AlbumList />}/>}
         <Route path='/Elec' element = {<Electron />}/>
         <Route path='/Pop' element = {<Pop />}/>
         <Route path='/Rock' element = {<Rock />}/>

@@ -79,6 +79,7 @@ font-family: var(--font-family);
 font-weight: 400;
 font-size: 15px;
 color: #000;
+padding-left: 25px;
 }
 
 .news-subtitle::before {
