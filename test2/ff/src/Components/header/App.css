@@ -4,51 +4,10 @@
 
 .menu {
     display: grid;
-    grid-template-columns: 400px 450px 300px 150px;
+    grid-template-columns: 500px 450px 350px 150px;
     align-items: center;
 }
 
-.box{
-    position: relative;
-}
-
-.input {
-    padding: 10px;
-    width: 40px;
-    height: 40px;
-    background: none;
-    border: 2px solid white;
-    border-radius: 50px;
-    box-sizing: border-box;
-    font-family: 'inter';
-    font-size: 15px;
-    color: var(--color-light);
-    outline: none;
-    transition: .5s;
-}
-
-.input::placeholder{
-    color: var(--color-light);
-    font-size: 15px;
-}
-.box:hover input{
-    width: 350px;
-    background: linear-gradient(90deg, #355c7d 0%, #6c5b7b 50%, #c06c84 100%);
-    border-radius: 10px;
-}
-.box i{
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translate(-50%,-50%);
-    font-size: 26px;
-    color: #ffd52d;
-    transition: .2s;
-}
-.box:hover i{
-    opacity: 0;
-    z-index: -1;
-}
 
 .header-logo {
     padding-top: 5px;

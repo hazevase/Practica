@@ -1,7 +1,34 @@
 import './account.css'
 import Ava from './img/avatar.png'
+import React, {useEffect, useContext, useState} from 'react'
+import { ProfileImageContext } from './ProfileImageContext';
 
 function ACC() {
+    
+    const user = localStorage.getItem('email')
+    const role = localStorage.getItem('role')
+    
+
+    const [profileImage, setProfileImage] = useState(localStorage.getItem('profileImage') || null);
+    const [selectedFile, setSelectedFile] = useState(null);
+  
+    const handleFileChange = (event) => {
+      setSelectedFile(event.target.files[0]);
+    };
+  
+    // Обработка клика по кнопке для изменения изображения
+    const handleUpload = () => {
+        if (selectedFile) {
+          const reader = new FileReader();
+          reader.readAsDataURL(selectedFile);
+          reader.onloadend = () => {
+            const imageUrl = reader.result;
+            localStorage.setItem('profileImage', imageUrl);
+            setProfileImage(imageUrl);
+          };
+        }
+      };
+    
 
     const handleLogout = () => {
 		localStorage.removeItem("token");
@@ -20,8 +47,9 @@ function ACC() {
             <br />
             <div className="account-main">
             <div className="account-avatar">
-                <img width={325} height={325} className='avatar' src={Ava} alt="" />
-                <button className="account-avatar__redact">Редактировать</button>
+                <img width={325} height={325} className='avatar' src={profileImage} alt="" />
+                <input className='avatar-file' type="file" onChange={handleFileChange} />
+                <button onClick={handleUpload} className="account-avatar__redact">Редактировать </button>
                 <button className="account-avatar__redact" onClick={handleLogout}>Выйти</button>
             </div>
         <div className="account-info">
@@ -31,14 +59,14 @@ function ACC() {
                 <div className="account-info-main__left">
                 <div className="account-info-main__item">
                     <span>
-                    Почта
+                    {user}
                     </span>
                 </div>
             </div>
                 <div className="account-info-main__right">
                 <div className="account-info-main__item">
                     <span>
-                    Пароль
+                    {role}
                     </span>
                 </div>
                 </div>

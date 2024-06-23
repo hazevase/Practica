@@ -42,7 +42,7 @@ function App() {
     <Route path='/' element = {<Layout />}>
         <Route index element = {<Reg />}/>
         <Route path='/login' element = {<Login />}/>
-      {role && role.includes('admin') && <Route path='/Main' element = {<Glav />} />}
+       <Route path='/Main' element = {<Glav />} />
         <Route path='/MyMusic' element= {<MyM />}/>
         <Route path='/Account' element = {<ACC />}/>
         <Route path='/Album' element = {<AlbumList />}/>
