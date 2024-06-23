@@ -2,7 +2,7 @@ import './log.css'
 import Google from './img/icons/google-icon.svg'
 import VK from './img/icons/VK-icon.svg'
 import { Link, useNavigate} from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios'
 
 
@@ -23,8 +23,11 @@ function Reg() {
             try {
                 const url = "http://localhost:8080/api/users";
                 const { data: res } = await axios.post(url, data);
+                localStorage.setItem("token", res.data);
+                localStorage.setItem("role", res.data);
                 navigate("/login");
                 console.log(res.message);
+
             } catch (error) {
                 if (
                     error.response &&
@@ -34,7 +37,11 @@ function Reg() {
                     setError(error.response.data.message);
                 }
             }
+           
+            
         };
+
+       
 
   return (
   <main className='content'>

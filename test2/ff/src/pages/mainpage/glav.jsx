@@ -7,7 +7,9 @@ import Coi from './img/Coi.png'
 import { Link } from 'react-router-dom';
 
 
+
 function Glav() {
+
   return (
   <main className='content'>
     <section className='glav-section'>
