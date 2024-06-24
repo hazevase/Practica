@@ -4,7 +4,7 @@
 
 .menu {
     display: grid;
-    grid-template-columns: 500px 450px 350px 150px;
+    grid-template-columns: 900px 300px 100px;
     align-items: center;
 }
 

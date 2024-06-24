@@ -1,12 +1,43 @@
 import './account.css'
-import Ava from './img/avatar.png'
-import React, {useEffect, useContext, useState} from 'react'
-import { ProfileImageContext } from './ProfileImageContext';
+import anime from 'animejs';
+import React, {useState, useRef, useEffect} from 'react'
+
 
 function ACC() {
-    
+    const blockRef = useRef([]);
+    const rightRef = useRef([])
     const user = localStorage.getItem('email')
     const role = localStorage.getItem('role')
+    
+    useEffect(() => {
+        anime({
+          targets: blockRef.current,
+          opacity: [0, 1],
+          translateY: [-40, 0],
+          duration: 8000,
+          easing: 'easeOutExpo',
+        });
+        anime({
+            targets: rightRef.current,
+            opacity: [0, 1],
+            translateY: [0, 0],
+            translateX: [-300, 0],
+            duration: 6000,
+            easing: 'easeOutExpo',
+          });
+      }, []);
+
+      const addToRefsT = (el) => {
+        if (el && !blockRef.current.includes(el)) {
+            blockRef.current.push(el);
+        }
+      };
+
+      const addToRefsR = (el) => {
+        if (el && !rightRef.current.includes(el)) {
+            rightRef.current.push(el);
+        }
+      };
     
 
     const [profileImage, setProfileImage] = useState(localStorage.getItem('profileImage') || null);
@@ -40,12 +71,12 @@ function ACC() {
   <main className='content'>
     <section className='account'>
         <div className="container">
-            <div className="account-content">
-                <h1 className="account-title">Профиль</h1>
+            <div ref={addToRefsT} className="account-content">
+                <h1  className="account-title">Профиль</h1>
             </div>
             <br />
             <br />
-            <div className="account-main">
+            <div ref={addToRefsR} className="account-main">
             <div className="account-avatar">
                 <img width={325} height={325} className='avatar' src={profileImage} alt="" />
                 <input className='avatar-file' type="file" onChange={handleFileChange} />

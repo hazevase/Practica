@@ -1,0 +1,32 @@
+.new-releas__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+}
+
+.new-releas__track {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    color: var(--color-light);
+    font-family: var(--font-family);
+    gap: 5px;
+    font-size: 18px;
+}
+
+.new-releas__title {
+    color: var(--color-light);
+    font-family: var(--font-family);
+    gap: 5px;
+    font-size: 40px;
+    
+}
+
+.new-releas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

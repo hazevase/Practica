@@ -1,6 +1,8 @@
+
+
 .glav-section {
     padding-top: 50px;
-    background: var(--background-color);
+    /* background: var(--background-color); */
 }
 
 .glav {
@@ -75,11 +77,13 @@ color: #fff;
 
 .news-subtitle {
     position: relative;
+    background-color: transparent;
 font-family: var(--font-family);
 font-weight: 400;
 font-size: 15px;
 color: #000;
 padding-left: 25px;
+border: none;
 }
 
 .news-subtitle::before {
@@ -101,6 +105,7 @@ padding-left: 25px;
     margin-top: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     /* justify-content: center; */
     column-gap: 20px;
     border-radius: 20px;
@@ -208,7 +213,7 @@ padding-left: 25px;
 .janrmus-catal {
     margin-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .janrmus-cards-item {
         display: flex;
@@ -327,3 +332,4 @@ padding-left: 25px;
         }
     }
 }
+

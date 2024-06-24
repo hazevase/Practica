@@ -5,55 +5,96 @@ import Vspak from './img/Vspak.png'
 import MrKitty from './img/MrKitty.png'
 import Coi from './img/Coi.png'
 import { Link } from 'react-router-dom';
+import React, {useEffect, useRef} from 'react'
+import anime from 'animejs';
+
+
+
 
 
 
 function Glav() {
+    const blockRef = useRef([]);
+    const rightRef = useRef([]);
+
+    useEffect(() => {
+      anime({
+        targets: blockRef.current,
+        opacity: [0, 1],
+        translateY: [-40, 0],
+        duration: 6000,
+        easing: 'easeOutExpo',
+      });
+      anime({
+        targets: rightRef.current,
+        opacity: [0, 1],
+        translateY: [0, 0],
+        translateX: [-300, 0],
+        duration: 8000,
+        easing: 'easeOutExpo',
+      });
+    }, []);
+  
+    const addToRefsT = (el) => {
+        if (el && !blockRef.current.includes(el)) {
+            blockRef.current.push(el);
+        }
+      };
+
+      const addToRefsR = (el) => {
+        if (el && !rightRef.current.includes(el)) {
+            rightRef.current.push(el);
+        }
+      };
+
 
   return (
+   
   <main className='content'>
+     
     <section className='glav-section'>
+        
         <div className="container">
 
 
-            <div className="glav">
+            <div ref={addToRefsT}  className="glav">
                 <h1 className="glav-title">Главная</h1>
                 <span className='glav-subtitle'>Что послушать?</span>
             </div>
 
 
-            <div className="news">
+            <div ref={addToRefsR}  className="news">
                 <div className="news rec-music">
                 <span className='news-title'>
                     РЕКОМЕНДАЦИИ
                 </span>
-                <a href="" className="news-subtitle">Слушать</a>
+                <Link to="/Recomendations"><a href="" className="news-subtitle">Слушать</a></Link>
                 </div>
                 <div className="news new-music">
                 <span className='news-title'>
                     НОВИНКИ
                 </span>
-                <a href="" className="news-subtitle">Слушать</a>
+                <Link to="/News"><a href="" className="news-subtitle">Слушать</a></Link>
                 </div>
                 <div className="news top-music">
                 <span className='news-title'>
                     ТОП-ЧАРТЫ
                 </span>
-                <a href="" className="news-subtitle">Слушать</a>
+                <Link to="/Top-charts"><a href="" className="news-subtitle">Слушать</a></Link>
                 </div>
                 <div className="news day-music">
                 <span className='news-title'>
                     ПЛЕЙЛИСТ ДНЯ
                 </span>
-                <a href="" className="news-subtitle">Слушать</a>
+                <Link to="/Playlist-Day"><a href="" className="news-subtitle">Слушать</a></Link>
                 </div>
             </div>
 
 
-            <div className="glav-moon">
+            <div ref={addToRefsT} className="glav-moon">
                 <span className="glav-moon__title">Какое сейчас настроение?</span>
             </div>
-            <div className="glav-moon-card">
+            <div ref={addToRefsR} className="glav-moon-card">
                 <div className="glav-moon-card good">
                     <a className='glav-moon-card__title' href="">
                         Радостное 
@@ -82,12 +123,12 @@ function Glav() {
             </div>
 
 
-            <div className="playlists">
+            <div ref={addToRefsT} className="playlists">
                 <span>
                     Плейлситы для вас
                 </span>
             </div>
-            <div className="playlists-card">
+            <div ref={addToRefsR} className="playlists-card">
                 <div className="playlists-card-item">
                     <span className='playlists-card-item__title'>
                         Похоже на:
@@ -121,13 +162,13 @@ function Glav() {
             </div>
             <br />
             <br />
-            <div className="janrmus">
-                <span className='janrmus-title'>
+            <div ref={addToRefsT} className="janrmus">
+                <div className="">
+                <span  className='janrmus-title'>
                     Жанры музыки
                 </span>
-                <br />
-                <br />
-                <div className="janrmus-catal">
+                </div>
+                <div ref={addToRefsR} className="janrmus-catal">
                     <div className="janrmus-cards">
                         <div className="janrmus-cards-item">
                             <div className="janrmus-cards-item__icon"></div>
@@ -160,7 +201,7 @@ function Glav() {
                     </div>
                     
                 </div>
-                <div className="janrmus-catal">
+                <div  className="janrmus-catal">
                     <div className="janrmus-cards">
                         <div className="janrmus-cards-item">
                             <div className="janrmus-cards-item__icon whi"></div>
@@ -195,19 +236,19 @@ function Glav() {
             </div>
             <br />
             <br />
-            <div className="other">
+            <div ref={addToRefsR} className="other">
                 <button className="other-btn">Показать еще</button>
             </div>
             <br />
             <br />
             <br />
-            <div className="popular-creator__title">
+            <div ref={addToRefsT} className="popular-creator__title">
                 <span>
                     Популярные исполнители
                 </span>
             </div>
             <br />
-            <div className="popular-creator">
+            <div ref={addToRefsR}  className="popular-creator">
                 <div className="popular-creator-info">
                     <img className='popular-creator-info__photo' src={Metan} alt="" />
                     <span className="popular-creator-info__name">Metan</span>
@@ -238,6 +279,8 @@ function Glav() {
         <br />
         <br />
     </section>
+  
+        
   </main>
 
   )
