@@ -38,34 +38,34 @@ const AlbumList = () => {
     return (
         <main className='content'>
             <div className='album-section'>
-            <form className='album-form' onSubmit={handleSearch}>
-                <input
-                    className='album-search-input'
-                    size={50}
-                    type="text"
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    placeholder="Введите тему, исполнителя или название альбома"
-                />
-                {/* <button type="submit">Search</button> */}
-            </form>
-            {loading && <p>Loading...</p>}
-            {error && <p>{error}</p>}
-            <div className='album-collection'>
-                {albums.length > 0 ? (
-                    <ul className='album-wrap'>
-                        {albums.map((album) => (
-                            <li className='album-content' key={album.id}>
-                                <img className='album-img' src={album.images[0]?.url} alt={album.name} />
-                                <p className='album-info'>{album.name} by {album.artists[0].name}</p>
-                            </li>
-                        ))}
-                    </ul>
-                ) : (
-                    <p>No albums found</p>
-                )}
+                <form className='album-form' onSubmit={handleSearch}>
+                    <input
+                        className='album-search-input'
+                        size={50}
+                        type="text"
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        placeholder="Введите тему, исполнителя или название альбома"
+                    />
+                    {/* <button type="submit">Search</button> */}
+                </form>
+                {loading && <p>Loading...</p>}
+                {error && <p>{error}</p>}
+                <div className='album-collection'>
+                    {albums.length > 0 ? (
+                        <ul className='album-wrap'>
+                            {albums.map((album) => (
+                                <li className='album-content' key={album.id}>
+                                    <img className='album-img' src={album.images[0]?.url} alt={album.name} />
+                                    <p className='album-info'>{album.name} by {album.artists[0].name}</p>
+                                </li>
+                            ))}
+                        </ul>
+                    ) : (
+                        <p>No albums found</p>
+                    )}
+                </div>
             </div>
-        </div>
         </main>
     );
 };

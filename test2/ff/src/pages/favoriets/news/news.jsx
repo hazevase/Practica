@@ -26,12 +26,12 @@ const News = () => {
     return (
         <div className="container">
             <div className="new-releas">
-                    <h1 className='new-releas__title'>НОВИНКИ</h1>
-                    <br />
+                <h1 className='new-releas__title'>НОВИНКИ</h1>
+                <br />
                 <ul className='new-releas__wrap'>
                     {tracks.map((track) => (
                         <li className='new-releas__track' key={track.id}>
-                            <img width="350px" className='new-releas__track-photo' src={track.images[0].url} alt={track.name}  />
+                            <img width="350px" className='new-releas__track-photo' src={track.images[0].url} alt={track.name} />
                             <p className='new-releas__track-title'>{track.name}</p>
                             <p className='new-releas__track-subtitle'>{track.artists.map(artist => artist.name).join(', ')}</p>
                         </li>

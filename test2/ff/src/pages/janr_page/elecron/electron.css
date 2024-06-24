@@ -20,12 +20,12 @@
 .track-content {
     display: flex;
     justify-content: center;
-   
+
 }
 
 .track-collection {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     gap: 15px;
     padding: 10px 10px;
@@ -53,9 +53,3 @@
         transition: 1s linear;
     }
 }
-
-
-
-
-
-

@@ -17,7 +17,7 @@
 *,
 *::before,
 *::after {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 span {
@@ -30,37 +30,35 @@ li {
   color: var(--color-light);
 }
 
-a{
-text-decoration: none;
-list-style: none;
-color: var(--color-light);
+a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--color-light);
 }
 
 body {
   margin: 0 auto;
 }
 
-:where(
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-dl
-):where([class]) {
-margin-block: 0;
+:where(h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  dl):where([class]) {
+  margin-block: 0;
 }
 
 :where(dd[class]) {
-margin-left: 0;
+  margin-left: 0;
 }
 
 :where(ul[class]) {
-list-style: none;
+  list-style: none;
 }
 
 img {
@@ -108,9 +106,11 @@ main {
 }
 
 body::-webkit-scrollbar {
-  width: 12px; /* Ширина скролл-бара */
- 
+  width: 12px;
+  /* Ширина скролл-бара */
+
 }
+
 ::-webkit-scrollbar-track {
   border-radius: 100vh;
   background: transparent;

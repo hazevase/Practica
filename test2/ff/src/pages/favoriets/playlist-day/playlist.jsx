@@ -3,7 +3,7 @@ import getSpotifyToken from '../../../utils/getSpotifyToken';
 import './playlist.css';
 
 const Top = () => {
-    const [tracks, setTracks] = useState([]);
+  const [tracks, setTracks] = useState([]);
 
   useEffect(() => {
     const fetchPlaylistOfTheDay = async () => {
@@ -40,24 +40,24 @@ const Top = () => {
     fetchPlaylistOfTheDay();
   }, []);
 
-    return (
-        <div className="container">
-            <div className="new-releas">
-                    <h1 className='new-releas__title'>Плейлист Дня</h1>
-                    <br />
-                <ul className='new-releas__wrap'>
-                    {tracks.map((track) => (
-                        <li className='new-releas__track' key={track.id}>
-                            <img width="350px" className='new-releas__track-photo' src={track.album.images[0].url} alt={track.name}  />
-                            <p className='new-releas__track-title'>{track.name}</p>
-                            <p className='new-releas__track-subtitle'>{track.artists.map(artist => artist.name).join(', ')}</p>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        </div>
+  return (
+    <div className="container">
+      <div className="new-releas">
+        <h1 className='new-releas__title'>Плейлист Дня</h1>
+        <br />
+        <ul className='new-releas__wrap'>
+          {tracks.map((track) => (
+            <li className='new-releas__track' key={track.id}>
+              <img width="350px" className='new-releas__track-photo' src={track.album.images[0].url} alt={track.name} />
+              <p className='new-releas__track-title'>{track.name}</p>
+              <p className='new-releas__track-subtitle'>{track.artists.map(artist => artist.name).join(', ')}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
 
-    );
+  );
 };
 
 export default Top;

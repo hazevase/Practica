@@ -1,9 +1,11 @@
 .account {
     background: var(--background-color);
 }
-.account-content{
+
+.account-content {
     display: grid;
     padding-top: 50px;
+
     .account-title {
         font-family: var(--font-family);
         font-weight: 700;
@@ -17,9 +19,9 @@
 } */
 
 .account-main {
-    display: grid; 
+    display: grid;
     grid-template-columns: 400px 650px;
-    
+
 }
 
 .avatar {
@@ -28,7 +30,7 @@
 
 .account-info {
     padding-top: 50px;
-    
+
 }
 
 .account-info-main__layout {
@@ -46,7 +48,7 @@
     align-items: center;
     width: 249px;
     height: 32px;
-    
+
 }
 
 .account-avatar {
@@ -121,6 +123,7 @@
     justify-content: space-between;
     padding-left: 10px;
     padding-top: 27px;
+
     .account-music__btn {
         margin-top: 4px;
         width: 71px;
@@ -143,7 +146,7 @@
     border-radius: 5px;
     color: white;
     background-color: transparent;
-} 
+}
 
 .account-music input::placeholder {
     font-family: var(--font-family);
@@ -151,5 +154,3 @@
     font-size: 12px;
     color: #797878;
 }
-
-
