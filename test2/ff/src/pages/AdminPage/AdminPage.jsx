@@ -64,7 +64,7 @@ function AdminPage() {
             <div>
             <h2 className='title-admin'>Управление пользователями</h2>
             <div className="form-section">
-                <h3>Добавить нового пользователя</h3>
+                <h3 className='title-admin' >Добавить нового пользователя</h3>
                 <input
                     type="email"
                     placeholder="Почта"
@@ -87,7 +87,7 @@ function AdminPage() {
             </div>
 
             <div className='users-section' >
-                <h3>Список пользователей</h3>
+                <h3 className='title-admin' >Список пользователей</h3>
                 <ul className="users-list">
                     {users.map(user => (
                         <li key={user._id}>
@@ -107,7 +107,7 @@ function AdminPage() {
             <br />
             {editingUser && (
                 <div className='form-editing'>
-                    <h3>Изменить пользователя</h3>
+                    <h3 className='title-admin'>Изменить пользователя</h3>
                     <input
                         type="email"
                         placeholder="Почта"
