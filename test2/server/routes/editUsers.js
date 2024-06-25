@@ -6,7 +6,7 @@ const bcrypt = require("bcrypt");
 router.put('/:id', async (req, res) => {
     try {
         const user = await User.findById(req.params.id);
-        if (!user) return res.status(404).json({ message: 'User not found' });
+        if (!user) return res.status(404).json({ message: 'Пользователь не найден' });
 
         user.email = req.body.email;
         user.password = req.body.password;
