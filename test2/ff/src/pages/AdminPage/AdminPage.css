@@ -1,0 +1,133 @@
+
+.container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--color-light);
+    font-family: var(--font-family);
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: var(--color-light);
+    font-family: var(--font-family);
+}
+
+.form-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--color-light);
+    font-family: var(--font-family);
+}
+
+.form-section input[type="email"],
+.form-section input[type="text"],
+.form-section input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-section input[type="email"]:focus,
+.form-section input[type="text"]:focus,
+.form-section input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.form-section input[type="email"]::placeholder,
+.form-section input[type="text"]::placeholder,
+.form-section input[type="password"]::placeholder {
+    outline: none;
+    border-color: #007bff;
+    color: black;
+    font-family: var(--font-family);
+}
+
+.form-section button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-section button:hover {
+    background-color: #0056b3;
+}
+
+.users-section {
+    margin-top: 20px;
+}
+
+.users-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.users-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.users-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.users-list li p {
+    margin: 0;
+    color: black;
+    font-family: var(--font-family);
+}
+
+.users-list li button {
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+    font-family: var(--font-family);
+}
+
+.users-list li button.edit-btn {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.users-list li button:hover,
+.users-list li button.edit-btn:hover {
+    background-color: #c82333;
+}
+
+.form-editing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.editing-change {
+    padding: 10px;
+    margin-bottom: 5px;
+    font-family: var(--font-family);
+    font-size: 15px;
+}
+
+.edit-change__btn {
+    padding: 5px 237px;
+}
