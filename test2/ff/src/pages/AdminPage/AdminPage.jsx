@@ -62,7 +62,7 @@ function AdminPage() {
         <main>
             <div className="container">
             <div>
-            <h2>Управление пользователями</h2>
+            <h2 className='title-admin'>Управление пользователями</h2>
             <div className="form-section">
                 <h3>Добавить нового пользователя</h3>
                 <input
@@ -97,13 +97,14 @@ function AdminPage() {
                               
                             <button className="edit-btn" onClick={() => handleEdit(user)}>Изменить</button>
                          <button onClick={() => handleDelete(user._id)}>Удалить</button>
+                         
                         </li>
                          
                     ))}
                    
                 </ul>
             </div>
-
+            <br />
             {editingUser && (
                 <div className='form-editing'>
                     <h3>Изменить пользователя</h3>

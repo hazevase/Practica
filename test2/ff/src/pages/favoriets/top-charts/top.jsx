@@ -20,7 +20,7 @@ const Top = () => {
       );
 
       const categoryData = await categoryResponse.json();
-      const playlistId = categoryData.playlists.items[0].id;
+      const playlistId = categoryData.playlists.items[1].id;
 
       // Получение треков из первого плейлиста
       const tracksResponse = await fetch(

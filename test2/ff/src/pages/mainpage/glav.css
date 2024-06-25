@@ -212,6 +212,7 @@
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    margin-right: 100px;
 
     .janrmus-cards-item {
         display: flex;

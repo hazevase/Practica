@@ -16,6 +16,7 @@ import anime from 'animejs';
 function Glav() {
     const blockRef = useRef([]);
     const rightRef = useRef([]);
+    const leftRef = useRef([]);
 
     useEffect(() => {
         anime({
@@ -33,6 +34,14 @@ function Glav() {
             duration: 7000,
             easing: 'easeOutExpo',
         });
+        anime({
+            targets: leftRef.current,
+            opacity: [0, 1],
+            translateY: [0, 0],
+            translateX: [300, 0],
+            duration: 7000,
+            easing: 'easeOutExpo',
+        });
     }, []);
 
     const addToRefsT = (el) => {
@@ -44,6 +53,12 @@ function Glav() {
     const addToRefsR = (el) => {
         if (el && !rightRef.current.includes(el)) {
             rightRef.current.push(el);
+        }
+    };
+
+    const addToRefsL = (el) => {
+        if (el && !leftRef.current.includes(el)) {
+            leftRef.current.push(el);
         }
     };
 
@@ -201,8 +216,8 @@ function Glav() {
                             </div>
 
                         </div>
-                        <div className="janrmus-catal">
-                            <div className="janrmus-cards">
+                        <div ref={addToRefsL} className="janrmus-catal">
+                            <div  className="janrmus-cards">
                                 <div className="janrmus-cards-item">
                                     <div className="janrmus-cards-item__icon whi"></div>
                                     <a className='janrmus-cards-item__title' href="">Электроника</a>

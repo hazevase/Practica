@@ -48,6 +48,11 @@
     }
 }
 
+.album-search-input::placeholder {
+    color: var(--color-light);
+    font-family: var(--font-family);
+}
+
 .album-wrap {
     display: flex;
     flex-wrap: wrap;
