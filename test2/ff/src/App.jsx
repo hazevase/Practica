@@ -17,6 +17,7 @@ import Recom from './pages/favoriets/recomendation/recomendation.jsx'
 import Top from './pages/favoriets/top-charts/top.jsx'
 import Playlist from './pages/favoriets/playlist-day/playlist.jsx'
 import AdminPage from './pages/AdminPage/AdminPage.jsx'
+import Chars from './pages/charspage/chars.jsx'
 import { jwtDecode } from "jwt-decode";
 import './index.css'
 
@@ -64,6 +65,7 @@ function App() {
         <Route path='/Shan' element={<Shanson />} />
 
         <Route path='/AdminPage' element={<AdminPage />} />
+        <Route path='/Chars' element={<Chars />} />
 
         {/* Блоки с разной тематикой */}
         <Route path='/News' element={<News />} />

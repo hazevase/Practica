@@ -30,6 +30,12 @@ function Header() {
                 <Link className="nav-menu-item__link" to="/AdminPage">Админ Панель</Link>
               </li>
             )}
+
+            {role === 'admin' && (
+              <li className='nav-menu-item__link'>
+                <Link className="nav-menu-item__link" to="/Chars">Графики</Link>
+              </li>
+            )}
           </div>
           <div className="user-accout">
             <Link to="Account" className='user-accout__link' href=""><span class="material-symbols-outlined">account_circle</span></Link>

@@ -1,0 +1,23 @@
+.chars-bar {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-light);
+    .chars-bar__title {
+       padding-bottom: 15px;
+        color: var(--color-light);
+        font-family: var(--font-family);
+    }
+  
+}
+
+
+.MuitickLabel {
+    fill: rgba(255,255,255);
+}
+
+/* .css-132pz3d-MuiChartsAxis-root-MuiChartsXAxis-root .MuiChartsAxis-tickLabel {
+    fill: rgba(255, 255, 255);
+} */
