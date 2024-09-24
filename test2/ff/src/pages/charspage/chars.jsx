@@ -1,5 +1,6 @@
 import './chars.css'
 import { PieChart } from '@mui/x-charts/PieChart';
+import { LineChart } from '@mui/x-charts/LineChart';
 
 const data1 = [
     { label: 'Electron', value: 30 },
@@ -23,13 +24,13 @@ function Chars() {
                 {
                 data: data1,
                 innerRadius: 38,
-                outerRadius: 140,
+                outerRadius: 190,
                 paddingAngle: 5,
                 cornerRadius: 20,
                 startAngle: -115,
                 endAngle: 225,
                 cx: 240,
-                cy: 150,
+                cy: 210,
                         },    
                     ]  
                 } 
@@ -39,6 +40,36 @@ function Chars() {
                     legend: { hidden: true },
                   }}
             />
+            </div>
+            <div className="charts-collect">
+            <div className="charts-users">
+                  <h2 className="chars-users__title">
+                    Статистика пользовалетей
+                  </h2>
+                  <LineChart xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
+                    series={[
+                        {
+                            data: [2, 5.5, 2, 8.5, 1.5, 5],
+                        },
+                    ]} width={500} height={300}
+                  />
+            </div>
+            <div className="charts-admins">
+                  <h2 className="charts-admins__title">
+                    Статистика админов
+                  </h2>
+                  <LineChart
+                    xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
+                    series={[
+                        {
+                        data: [2, 5.5, 2, 8.5, 1.5, 5],
+                        area: true,
+                        },
+                    ]}
+                    width={500}
+                    height={300}
+                />
+            </div>
             </div>
         </main>
     )

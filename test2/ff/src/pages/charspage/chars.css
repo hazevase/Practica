@@ -13,9 +13,45 @@
   
 }
 
+h2 {
+    padding-top: 10px;
+    color: var(--color-light);
+        font-family: var(--font-family);
+}
 
 .MuitickLabel {
     fill: rgba(255,255,255);
+}
+
+.charts-collect {
+display: flex;
+justify-content: space-around;
+
+    .charts-admins {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: azure;
+        border-radius: 40px;
+}
+
+    .charts-users {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: azure;
+        border-radius: 40px;
+    }
+
+    .charts-admins__title {
+        color: black;
+        font-family: var(--font-family);
+    }
+
+    .chars-users__title {
+        color: black;
+        font-family: var(--font-family);
+    }
 }
 
 /* .css-132pz3d-MuiChartsAxis-root-MuiChartsXAxis-root .MuiChartsAxis-tickLabel {
